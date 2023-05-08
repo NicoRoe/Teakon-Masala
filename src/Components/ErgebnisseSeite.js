@@ -181,7 +181,7 @@ if (kriteria === "suche") {
         <>
             <p className='text-5xl text-gray-900 bg-grey-600 text-center font-bold my-6'>Die Welt des Tee</p>
             {/* für "Alle Tees" */}
-            {kriteria === "alle" && <p className='text-5xl text-gray-900 bg-grey-600 text-center font-bold my-6'>Alle Tees</p>}
+            {kriteria === "alle" && <p className='text-xl text-gray-900 bg-grey-600 text-center font-bold my-6'>Alle Tees</p>}
             {/* für einzelne Teeart */}
 
             {chosenCriterias.length === 1 &&
