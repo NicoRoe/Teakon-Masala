@@ -10,31 +10,31 @@ export default function TeeSorteDetail({allTeas}) {
         <>
             <div className='container'>
                 <h1 className='text-5xl text-white bg-grey-600 text-center font-bold my-6'>{tee.teename[0]}</h1>
-                <div className='flex justify-between sm:px-0 sm:justify-center'>
+                <div className='md:flex md:justify-between sm:px-0 sm:justify-center'>
                     {/* -------------------------BILD-01--------------------------------- */}
-                    <div class="flex items-center ">
-                        <img src={testbild} alt='test' className='w-80 h-80 mx-4 ml-0 my-4 rounded-lg  ' />
+                    <div class="h-1/3 flex items-center ">
+                        <img src={testbild} alt='test' className=' md:w-80 md:h-80 md:mx-4 md:ml-0 md:my-4 md:rounded-lg  ' />
                     </div>
                     {/* -------------------------TEXTFELD-01--------------------------------- */}
-                    <div class="flex flex-col justify-end mb-5">
-                        <p className=' text-gray-500 my-3'>Aroma:</p>
+                    <div class="h-1/3 flex flex-col  items-center gap-x-2 md:flex-col md:justify-end md:mb-5">
+                        <p className='text-gray-500 '>Aroma:</p>
                         <ul>
                         {tee.aromenname.map(aroma=>{return(
                         <li>{aroma}</li>)})}
                         </ul>
-                        <p className=' text-gray-500 my-3'>Koffeingehalt:</p>
+                        <p className=' text-gray-500 '>Koffeingehalt:</p>
                         <ul>
                         {tee.attributename.map(attribute=>{return(
                         <li>{attribute}</li>)})}
                         </ul>
-                        <p className=' text-gray-500 my-3'>Teeart:</p>
+                        <p className=' text-gray-500 '>Teeart:</p>
                         <ul>
                         {tee.tee_artenname.map(teeart=>{return(
                         <li>{teeart}</li>)})}
                         </ul>
                     </div>
                     {/* -------------------------BILD-02-------------------------------- */}
-                    <div class="flex items-center">
+                    <div class="h-1/3 flex items-center">
                         <img src={wrldmap} alt={tee.teename[0]} className='w-96 h-80 ml-300 mx-4 ml-100 my-4 m-30 rounded-lg' />
                     </div>
                 </div>

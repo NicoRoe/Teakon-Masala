@@ -7,7 +7,7 @@ export default function Infosection() {
     return (
         <>
             <div className="hero min-h-screenrounded-box">
-                <img src={infoPic} alt='paul-vincent-unsplash' className=' w-full h-3/4 rounded-box opacity-75'></img>
+                <img src={infoPic} alt='paul-vincent-unsplash' className=' top-0 w-full h-3/4 rounded-box opacity-75'></img>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w">
                         <h1 className="italic mb-5 text-7xl font-bold shadow-sm text-black ">TEEKON MASALA</h1>
